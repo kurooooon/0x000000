@@ -4,8 +4,16 @@
     <div class="hero-head">
       <nav class="navbar">
         <div class="container">
-          <div class="navbar-brand">
-            <a class="navbar-item">Logo</a>
+          <div class="navbar-brand" :style="{ 'align-items': 'center' }">
+            <a class="navbar-item">
+              <figure class="image is-64x64">
+                <img
+                  alt=""
+                  src="/logo_transparent64x64.png"
+                  :style="{ 'min-height': '100%' }"
+                />
+              </figure>
+            </a>
             <span
               class="navbar-burger burger"
               data-target="navbarMenuHeroA"
@@ -38,7 +46,7 @@
     </div>
 
     <!-- Hero content: will be in the middle -->
-    <div class="hero-body" style="justify-content: center;">
+    <div class="hero-body" :style="{ 'justify-content': 'center' }">
       <h1 class="is-size-1">
         0x000000
       </h1>

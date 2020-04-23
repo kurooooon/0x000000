@@ -1,71 +1,19 @@
 <template>
-  <section class="hero is-primary is-fullheight">
-    <!-- Hero head: will stick at the top -->
-    <div class="hero-head">
-      <nav class="navbar">
-        <div class="container">
-          <div class="navbar-brand" :style="{ 'align-items': 'center' }">
-            <a class="navbar-item">
-              <figure class="image is-64x64">
-                <img
-                  alt=""
-                  src="/logo_transparent64x64.png"
-                  :style="{ 'min-height': '100%' }"
-                />
-              </figure>
-            </a>
-            <span
-              class="navbar-burger burger"
-              data-target="navbarMenuHeroA"
-              @click="isOpenBurger = !isOpenBurger"
-            >
-              <span></span>
-              <span></span>
-              <span></span>
-            </span>
-          </div>
-          <div
-            id="navbarMenuHeroA"
-            class="navbar-menu"
-            :class="{ 'is-active': isOpenBurger }"
-          >
-            <div class="navbar-end">
-              <a class="navbar-item is-active">
-                Home
-              </a>
-              <a class="navbar-item">
-                About
-              </a>
-              <a class="navbar-item">
-                Works
-              </a>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </div>
-
-    <!-- Hero content: will be in the middle -->
-    <div class="hero-body" :style="{ 'justify-content': 'center' }">
-      <h1 class="is-size-1">
+  <!-- Hero content: will be in the middle -->
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <h1 class="is-size-1 glitch">
         0x000000
       </h1>
     </div>
-    <!-- Hero footer: will stick at the bottom -->
-    <footer class="footer">
-      <div class="has-text-centered">
-        <p>©2020 0x000000,Inc.</p>
-      </div>
-    </footer>
-  </section>
+  </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
-import '../css/style.css'
+import '../css/glitch.css'
 
 export default Vue.extend({
-  components: {},
   data() {
     return {
       isOpenBurger: false

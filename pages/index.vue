@@ -2,7 +2,7 @@
   <!-- Hero content: will be in the middle -->
   <div class="hero-body">
     <div class="container has-text-centered">
-      <h1 class="is-size-1 glitch">
+      <h1 class="is-size-1 glitch" data-text="0x000000">
         0x000000
       </h1>
     </div>

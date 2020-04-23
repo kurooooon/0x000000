@@ -11,7 +11,7 @@
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "test": "jest",
-    "css-build": "node-sass --omit-source-map-url sass/style.scss css/style.css",
+    "css-build": "node-sass --omit-source-map-url sass -o css",
     "css-watch": "npm run css-build -- --watch"
   },
   "dependencies": {

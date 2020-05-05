@@ -1,12 +1,16 @@
 <template>
-  <div class="hero-body">
-    <div class="container has-text-centered">
-      <h1 class="is-size-1">
-        about
-      </h1>
-    </div>
-  </div>
+  <b-container class="main">
+    <h1>about</h1>
+  </b-container>
 </template>
+
 <script lang="ts">
-export default {}
+import Vue from 'vue'
+export default Vue.extend({})
 </script>
+
+<style scoped>
+.main {
+  flex: 1;
+}
+</style>

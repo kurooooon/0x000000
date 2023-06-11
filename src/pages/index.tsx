@@ -1,5 +1,5 @@
-import Head from 'next/head';
 import styled from 'styled-components';
+import Head from '../components/Head';
 import PageWrapper from '../components/PageWrapper';
 import { device } from '../constants/device';
 import glitch from '../styles/glitch.module.scss';
@@ -23,9 +23,7 @@ const StyledGlitch = styled.h1`
 export default function TopPage() {
   return (
     <PageWrapper>
-      <Head>
-        <title>0x000000</title>
-      </Head>
+      <Head />
 
       <Main>
         <StyledGlitch data-text="0x000000" className={glitch.glitch}>

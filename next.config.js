@@ -7,4 +7,7 @@ module.exports = {
       path.join(__dirname, './src/**'),
     ],
   },
+  images: {
+    domains: ['images.microcms-assets.io'],
+  },
 };

@@ -4,6 +4,20 @@
     [
       "styled-components",
       { "ssr": true, "displayName": true, "preprocess": false }
+    ],
+    [
+      "babel-plugin-transform-imports",
+      {
+        // "@material-ui/core": {
+        //   // Use "transform: '@material-ui/core/${member}'," if your bundler does not support ES modules
+        //   "transform": "@material-ui/core/${member}",
+        //   "preventFullImport": true
+        // },
+        "lodash": {
+          "transform": "lodash/${member}",
+          "preventFullImport": true
+        }
+      }
     ]
   ]
 }

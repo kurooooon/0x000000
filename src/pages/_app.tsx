@@ -27,6 +27,13 @@ function MyApp({ Component, pageProps }: AppProps) {
       },
       type: 'dark',
     },
+    // overrides: {
+    //   MuiTypography: {
+    //     h1: {
+    //       fontSize: '3rem',
+    //     },
+    //   },
+    // },
   });
 
   return (

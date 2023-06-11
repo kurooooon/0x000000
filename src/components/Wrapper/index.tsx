@@ -6,7 +6,7 @@ type Props = {
 };
 
 const StyledWrapper = styled.div`
-  background-color: #1b262c;
+  /* background-color: #1b262c; */
 `;
 
 const Wrapper = ({ children }: Props) => (

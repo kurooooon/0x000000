@@ -1,5 +1,6 @@
 import {
   AppBar,
+  Box,
   ClickAwayListener,
   Grow,
   IconButton,
@@ -15,7 +16,7 @@ import Image from 'next/image';
 import { useCallback, useRef, useState } from 'react';
 import { FiMenu } from 'react-icons/fi';
 import BreakpointsSplitter from '../BreakpointsSplitter';
-import { Title, DesktopNavigation } from './styles';
+import { DesktopNavigation } from './styles';
 
 const Header = () => {
   const anchorRef = useRef(null);
@@ -26,11 +27,11 @@ const Header = () => {
   return (
     <AppBar position="static" color="transparent" style={{ boxShadow: 'none' }}>
       <Toolbar>
-        <Title>
-          <Typography variant="h6" component="h2">
-            <Image src="/logo.png" width={64} height={64} />
+        <Box flexGrow={1} height={64}>
+          <Typography component="h2">
+            <Image src="/images/logo.png" width={64} height={64} />
           </Typography>
-        </Title>
+        </Box>
         <BreakpointsSplitter
           mobile={
             <>
@@ -61,7 +62,7 @@ const Header = () => {
                             <Link href="/about">About</Link>
                           </MenuItem>
                           <MenuItem>
-                            <Link href="/works">Works</Link>
+                            <Link href="/works/1">Works</Link>
                           </MenuItem>
                         </MenuList>
                       </ClickAwayListener>
@@ -75,7 +76,7 @@ const Header = () => {
             <DesktopNavigation>
               <Link href="/">Home</Link>
               <Link href="/about">About</Link>
-              <Link href="/works">Works</Link>
+              <Link href="/works/1">Works</Link>
             </DesktopNavigation>
           }
         />

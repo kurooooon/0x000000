@@ -10,7 +10,6 @@
   "dependencies": {
     "@material-ui/core": "^4.11.3",
     "@material-ui/lab": "^4.0.0-alpha.57",
-    "@types/lodash": "^4.14.168",
     "@types/styled-components": "^5.1.7",
     "next": "12.0.0",
     "react": "17.0.1",

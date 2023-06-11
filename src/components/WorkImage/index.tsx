@@ -1,8 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
-import { Box, useTheme } from '@material-ui/core';
+import { Box, useTheme } from '@mui/material';
 import { BsImageFill } from 'react-icons/bs';
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 
 const IconWrapper = styled.span`
   position: absolute;
@@ -36,8 +36,10 @@ const WorkImage = ({ image }: Props) => {
   return (
     <Image
       src={`${image.url}?fit=fill&fill=blur&w=3000&h=2000`}
+      alt=""
       width={3000}
       height={2000}
+      layout="responsive"
     />
   );
 };

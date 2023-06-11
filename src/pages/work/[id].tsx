@@ -1,4 +1,4 @@
-import { Box, Container, Typography } from '@material-ui/core';
+import { Box, Container, Typography } from '@mui/material';
 import { GetStaticPaths, GetStaticProps } from 'next';
 import { FiExternalLink } from 'react-icons/fi';
 import Breadcrumbs from '../../components/Breadcrumbs';

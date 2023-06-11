@@ -1,16 +1,16 @@
-import { AppProps } from 'next/app';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Wrapper from '../components/Wrapper';
 import { useEffect } from 'react';
 import {
-  createMuiTheme,
+  createTheme,
   ThemeProvider as MaterialThemeProvider,
-} from '@material-ui/core/styles';
-import { ThemeProvider as StyledThemeProvider } from 'styled-components';
-import CssBaseline from '@material-ui/core/CssBaseline';
+  ThemeProvider,
+} from '@mui/material';
+import { CssBaseline } from '@mui/material';
 import '../styles/destyle.css';
 import '../styles/global.css';
+import { AppProps } from 'next/app';
 
 function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {
@@ -20,32 +20,25 @@ function MyApp({ Component, pageProps }: AppProps) {
     }
   }, []);
 
-  const theme = createMuiTheme({
+  const theme = createTheme({
     palette: {
       primary: {
         main: '#0f4c75',
       },
-      type: 'dark',
+      mode: 'dark',
     },
-    // overrides: {
-    //   MuiTypography: {
-    //     h1: {
-    //       fontSize: '3rem',
-    //     },
-    //   },
-    // },
   });
 
   return (
     <MaterialThemeProvider theme={theme}>
-      <StyledThemeProvider theme={theme}>
+      <ThemeProvider theme={theme}>
         <CssBaseline />
         <Wrapper>
           <Header />
           <Component {...pageProps} />
           <Footer />
         </Wrapper>
-      </StyledThemeProvider>
+      </ThemeProvider>
     </MaterialThemeProvider>
   );
 }

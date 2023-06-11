@@ -1,4 +1,4 @@
-import { Box, Hidden } from '@material-ui/core';
+import { Hidden } from '@mui/material';
 
 type Props = {
   mobile: React.ReactNode;

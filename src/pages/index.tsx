@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 import Head from '../components/Head';
 import PageWrapper from '../components/PageWrapper';
 import { device } from '../constants/device';

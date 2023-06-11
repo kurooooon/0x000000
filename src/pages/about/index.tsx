@@ -1,4 +1,4 @@
-import { Box, Container, Typography } from '@material-ui/core';
+import { Box, Container, Typography } from '@mui/material';
 import { GetStaticProps } from 'next';
 import Image from 'next/image';
 import Breadcrumbs from '../../components/Breadcrumbs';
@@ -39,8 +39,14 @@ export default function AboutPage({ data }: Props) {
         <main>
           <Box mt={2} mb={2}>
             <Box display="flex" flexDirection="column" alignItems="center">
-              <Box flexGrow="0">
-                <Image src="/images/profile.jpg" width={88} height={88} />
+              <Box flexGrow="0" maxWidth={160}>
+                <Image
+                  alt=""
+                  src="/images/profile.jpg"
+                  width={88}
+                  height={88}
+                  layout="responsive"
+                />
               </Box>
               <Typography variant="h5" component="h3">
                 kuro

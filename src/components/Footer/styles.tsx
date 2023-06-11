@@ -1,8 +1,8 @@
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 
 export const Block = styled.footer`
   padding: 2rem 1rem;
-  background-color: ${(props) => props.theme.palette.primary.main};
+  background-color: ${({ theme }) => theme.palette.primary.main};
 `;
 
 export const ListGroup = styled.ul`

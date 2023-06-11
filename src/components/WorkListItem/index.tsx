@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { Box, Typography } from '@material-ui/core';
+import { Box, Typography } from '@mui/material';
 import { FiExternalLink } from 'react-icons/fi';
 import { Work } from '../../types/Work';
 import WorkImage from '../WorkImage';

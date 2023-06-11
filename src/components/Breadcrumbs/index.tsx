@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { Breadcrumbs as BCS, Typography } from '@material-ui/core';
+import { Breadcrumbs as BCS, Typography } from '@mui/material';
 
 type Props = {
   crumbs: {

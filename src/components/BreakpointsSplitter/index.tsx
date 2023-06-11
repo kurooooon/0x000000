@@ -1,4 +1,5 @@
-import { Hidden } from '@mui/material';
+import { useTheme } from '@emotion/react';
+import { Box, Hidden, useMediaQuery } from '@mui/material';
 
 type Props = {
   mobile: React.ReactNode;
@@ -6,14 +7,8 @@ type Props = {
 };
 
 const BreakpointsSplitter = ({ mobile, desktop }: Props) => {
-  return (
-    <>
-      {/* TODO */}
-      {/* @ts-ignore */}
-      <Hidden smUp>{mobile}</Hidden>
-      {/* @ts-ignore */}
-      <Hidden xsDown>{desktop}</Hidden>
-    </>
-  );
+  const theme = useTheme();
+  const isXl: boolean = useMediaQuery(() => theme.breakpoints.up('lg'));
+  return <>{isXl ? desktop : mobile}</>;
 };
 export default BreakpointsSplitter;

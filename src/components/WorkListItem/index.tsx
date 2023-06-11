@@ -3,7 +3,6 @@ import Link from 'next/link';
 import { Box, Typography } from '@material-ui/core';
 import { FiExternalLink } from 'react-icons/fi';
 import { Work } from '../../types/Work';
-import { isEqual } from 'lodash';
 import WorkImage from '../WorkImage';
 
 type Props = {
@@ -40,7 +39,4 @@ const WorkListItem = ({ id, data }: Props) => {
   );
 };
 
-const areEquals = (prev: Props, next: Props) =>
-  prev.id === next.id && isEqual(prev.data, next.data);
-
-export default React.memo(WorkListItem, areEquals);
+export default WorkListItem;

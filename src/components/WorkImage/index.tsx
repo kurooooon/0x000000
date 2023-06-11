@@ -2,7 +2,6 @@ import React from 'react';
 import Image from 'next/image';
 import { Box, useTheme } from '@material-ui/core';
 import { BsImageFill } from 'react-icons/bs';
-import { isEqual } from 'lodash';
 import styled from 'styled-components';
 
 const IconWrapper = styled.span`
@@ -43,6 +42,4 @@ const WorkImage = ({ image }: Props) => {
   );
 };
 
-const areEquals = (prev: Props, next: Props) => isEqual(prev.image, next.image);
-
-export default React.memo(WorkImage, areEquals);
+export default WorkImage;

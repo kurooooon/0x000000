@@ -1,4 +1,4 @@
-import { Hidden } from '@material-ui/core';
+import { Box, Hidden } from '@material-ui/core';
 
 type Props = {
   mobile: React.ReactNode;
@@ -8,7 +8,10 @@ type Props = {
 const BreakpointsSplitter = ({ mobile, desktop }: Props) => {
   return (
     <>
+      {/* TODO */}
+      {/* @ts-ignore */}
       <Hidden smUp>{mobile}</Hidden>
+      {/* @ts-ignore */}
       <Hidden xsDown>{desktop}</Hidden>
     </>
   );

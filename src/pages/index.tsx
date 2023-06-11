@@ -1,7 +1,6 @@
 import styled from '@emotion/styled';
 import Head from '../components/Head';
 import PageWrapper from '../components/PageWrapper';
-import { device } from '../constants/device';
 
 export const Main = styled.main`
   flex-grow: 1;

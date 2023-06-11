@@ -2,7 +2,6 @@ import styled from '@emotion/styled';
 import Head from '../components/Head';
 import PageWrapper from '../components/PageWrapper';
 import { device } from '../constants/device';
-import glitch from '../styles/glitch.module.scss';
 
 export const Main = styled.main`
   flex-grow: 1;
@@ -11,13 +10,8 @@ export const Main = styled.main`
   display: flex;
 `;
 
-const StyledGlitch = styled.h1`
-  font-size: 3rem;
-  font-family: 'Playball', cursive;
-
-  @media ${device.tablet} {
-    font-size: 5rem;
-  }
+const StyledH1 = styled.h1`
+  font-size: 4rem;
 `;
 
 export default function TopPage() {
@@ -26,9 +20,7 @@ export default function TopPage() {
       <Head />
 
       <Main>
-        <StyledGlitch data-text="0x000000" className={glitch.glitch}>
-          0x000000
-        </StyledGlitch>
+        <StyledH1>0x000000</StyledH1>
       </Main>
     </PageWrapper>
   );

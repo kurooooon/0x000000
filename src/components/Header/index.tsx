@@ -29,12 +29,7 @@ const Header = () => {
       <Toolbar>
         <Box flexGrow={1} height={64}>
           <Typography component="h2">
-            <Image
-              alt="0x000000"
-              src="/images/logo.png"
-              width={64}
-              height={64}
-            />
+            <Image alt="0x000000" src="/images/logo.png" width={64} height={64} />
           </Typography>
         </Box>
         <BreakpointsSplitter

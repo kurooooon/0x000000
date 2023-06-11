@@ -25,11 +25,7 @@ const WorkImage = ({ image }: Props) => {
         <IconWrapper>
           <BsImageFill size={88} color={theme.palette.primary.main} />
         </IconWrapper>
-        <img
-          width="100%"
-          src="http://placehold.jp/300x200.png?text=%20"
-          alt="no image"
-        />
+        <img width="100%" src="http://placehold.jp/300x200.png?text=%20" alt="no image" />
       </Box>
     );
   }

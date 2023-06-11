@@ -1,5 +1,5 @@
 import { useTheme } from '@emotion/react';
-import { Box, Hidden, useMediaQuery } from '@mui/material';
+import { useMediaQuery } from '@mui/material';
 
 type Props = {
   mobile: React.ReactNode;

@@ -2,11 +2,7 @@ import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Wrapper from '../components/Wrapper';
 import { useEffect } from 'react';
-import {
-  createTheme,
-  ThemeProvider as MaterialThemeProvider,
-  ThemeProvider,
-} from '@mui/material';
+import { createTheme, ThemeProvider as MaterialThemeProvider, ThemeProvider } from '@mui/material';
 import { CssBaseline } from '@mui/material';
 import '../styles/destyle.css';
 import '../styles/global.css';

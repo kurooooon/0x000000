@@ -28,9 +28,7 @@ const getTotalPage = (data: Data) => {
 export const getStaticProps: GetStaticProps = async (ctx) => {
   const page = ctx.params ? Number(ctx.params.page) : 1;
   const offset = (page - 1) * LIMIT;
-  const data = await pageFecher(
-    `${process.env.API_CMS}/works?limit=${LIMIT}&offset=${offset}`
-  );
+  const data = await pageFecher(`${process.env.API_CMS}/works?limit=${LIMIT}&offset=${offset}`);
   return { props: { data } };
 };
 
@@ -76,7 +74,7 @@ export default function WorksPage({ data }: Props) {
   const totalPage = getTotalPage(data);
   const onClickPagination = useCallback(
     (_: unknown, page: number) => router.push(`/works/${page}`),
-    []
+    [],
   );
 
   return (

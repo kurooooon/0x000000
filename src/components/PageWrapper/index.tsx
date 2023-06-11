@@ -4,7 +4,5 @@ type Props = {
   children: React.ReactNode;
 };
 
-const PageWrapper = ({ children }: Props) => (
-  <div className={styles.block}>{children}</div>
-);
+const PageWrapper = ({ children }: Props) => <div className={styles.block}>{children}</div>;
 export default PageWrapper;

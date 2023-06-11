@@ -6,7 +6,7 @@ import Head from '../../components/Head';
 import PageWrapper from '../../components/PageWrapper';
 import { HOME } from '../../constants/route';
 
-export const getStaticProps: GetStaticProps = async (ctx) => {
+export const getStaticProps: GetStaticProps = async () => {
   const data = await fetch(`${process.env.API_CMS}/about` || '', {
     headers: {
       'X-API-KEY': process.env.API_CMS_KEY || '',

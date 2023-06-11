@@ -32,7 +32,7 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
   return { props: { data } };
 };
 
-export const getStaticPaths: GetStaticPaths = async (ctx) => {
+export const getStaticPaths: GetStaticPaths = async () => {
   const data = await pageFecher(`${process.env.API_CMS}/works`);
   const totalPage = getTotalPage(data);
   const paths = Array(totalPage)

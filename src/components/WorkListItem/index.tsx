@@ -25,7 +25,7 @@ const WorkListItem = ({ id, data }: Props) => {
         </div>
       </Link>
       {url ? (
-        <a href={url} target="_blank">
+        <a href={url} target="_blank" rel="noreferrer">
           <Box mt={1} display="flex" alignItems="center">
             <Box component="span" display="flex" mr={0.5}>
               <FiExternalLink />

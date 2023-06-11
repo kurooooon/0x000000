@@ -9,22 +9,22 @@ const Footer = () => (
   <Block>
     <ListGroup>
       <li>
-        <a href="https://twitter.com/0x000000_net" target="_blank">
+        <a href="https://twitter.com/0x000000_net" target="_blank" rel="noreferrer">
           <FaTwitter />
         </a>
       </li>
       <li>
-        <a href="https://github.com/kurooooon" target="_blank">
+        <a href="https://github.com/kurooooon" target="_blank" rel="noreferrer">
           <FaGithub />
         </a>
       </li>
       <li>
-        <a href="https://www.wantedly.com/id/kurooooon" target="_blank">
+        <a href="https://www.wantedly.com/id/kurooooon" target="_blank" rel="noreferrer">
           <SiWantedly />
         </a>
       </li>
       <li>
-        <a href="https://soundcloud.com/kurooooon" target="_blank">
+        <a href="https://soundcloud.com/kurooooon" target="_blank" rel="noreferrer">
           <FaSoundcloud />
         </a>
       </li>

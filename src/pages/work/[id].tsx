@@ -18,7 +18,7 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
   return { props: { data } };
 };
 
-export const getStaticPaths: GetStaticPaths = async (ctx) => {
+export const getStaticPaths: GetStaticPaths = async () => {
   return {
     paths: [],
     fallback: true,
@@ -35,7 +35,7 @@ type Props = {
 };
 
 export default function WorkPage({ data }: Props) {
-  const { id, work } = data || {};
+  const { work } = data || {};
   const { title, url, image, skill } = work || {};
 
   return (
@@ -65,7 +65,7 @@ export default function WorkPage({ data }: Props) {
               </Box>
             ) : null}
             {url ? (
-              <a href={url} target="_blank">
+              <a href={url} target="_blank" rel="noreferrer">
                 <Box mt={1} display="flex" alignItems="center">
                   <Box component="span" display="flex" mr={0.5}>
                     <FiExternalLink />
